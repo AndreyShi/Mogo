@@ -227,6 +227,12 @@ hr{
     padding: 80px 0;
 }
 
+.section--feature{
+    padding-bottom: 0;
+    background: url("../images/features/background.jpg") center no-repeat;
+    background-size: cover;
+}
+
 .section__header{
     width: 100%;
     max-width: 950px;
@@ -372,3 +378,20 @@ hr{
 }
 
 
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices_item{
+    display: block;
+}
+
+.devices_item--iphone{
+    position:absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+}
