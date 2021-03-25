@@ -229,6 +229,7 @@ hr{
 
 .section--feature{
     padding-bottom: 0;
+    margin-bottom: 40px;
     background: url("../images/features/background.jpg") center no-repeat;
     background-size: cover;
 }
