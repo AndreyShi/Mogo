@@ -49,5 +49,23 @@ window.addEventListener('DOMContentLoaded',() => {
         });
     };
 
+
+    const accordion = (triggersSelector) =>{
+        const btns = document.querySelectorAll(triggersSelector);
+            btns.forEach(btn =>{
+            btn.addEventListener('click',function(){
+                btns.forEach(btn_ =>{
+                    if(btn != btn_)
+                        btn_.classList.remove('active');
+                });
+
+                this.classList.toggle('active');
+            });
+        });
+    }
+
     scrolling('.pageup');
+    accordion('.acc_item');
+
+
 });
