@@ -477,3 +477,83 @@ hr{
     max-height: 0px;
     
 }
+
+.quotebg{
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.quotes{
+    padding: 0px 110px;
+    position: relative;
+}
+
+.quote_item{
+    padding-left: 205px;
+    position: relative;
+}
+
+.quote_pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.quote_txt{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    color:#999;
+    margin-bottom: 10px;
+}
+
+.quote_author{
+    font-family:'Kaushan Script',
+    cursive;
+    font-size: 24px;
+    color: #333333;
+}
+
+.quote_author:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+    
+}
+
+.quotes_btn{
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.quotes_btn:after{
+    content:"";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    
+}
+
+.quotes_btn_prev{
+    left: 0;
+    transform: rotate(+225deg);
+}
+
+.quotes_btn_next{
+    right: 0;
+    transform: rotate(+45deg);
+}
