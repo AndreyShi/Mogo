@@ -557,3 +557,47 @@ hr{
     right: 0;
     transform: rotate(+45deg);
 }
+
+
+/*team*/
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_item{
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    position: relative;
+}
+.team_item:hover .team_img{
+    transform: translate3d(-10px,-10px,0);
+ }
+.team_item:hover .team_img img{
+   opacity: 0.1;  
+}
+.team_item:hover .social{
+    opacity: 1;
+}
+
+.team_img{
+    background: linear-gradient(to bottom,#f38181,#fce38a);
+    transition: transform .2s linear;
+    /*height: 470px;*/
+}
+
+.team_img img{
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.social{
+    transition: opacity .2s linear;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    opacity: 0;
+}
