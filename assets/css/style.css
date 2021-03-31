@@ -600,4 +600,58 @@ hr{
     right: 0;
     top: 50%;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social_item{
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+    text-decoration: none;
+    color: #f38181;
+    font-size: 30px;
+    padding: 12px;
+    line-height: 1;
+    transition: background .1s linear,
+    color .1s linear;
+}
+.social_item:hover{
+    color:#fff;
+    background-color:  #f38181;
+}
+.social_item:last-child{
+    border-right: none;
+}
+
+.team_name{
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.team_proffesion{
+    margin-top: 1px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color:#999;
+}
+
+
+/*logos*/
+
+.logos{
+    display:flex;
+    justify-content: space-between;
+}
+
+.section.section--gray{
+    background-color: #f8f8f8;
+    margin-top: 80px;
+    padding: 40px;
 }
