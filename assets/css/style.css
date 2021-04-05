@@ -648,10 +648,67 @@ hr{
 .logos{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.section.section--gray{
+.section.section--logos{
     background-color: #f8f8f8;
     margin-top: 80px;
+    margin-bottom: 20px;
     padding: 40px;
+}
+
+/*work*/
+
+.pic_work{
+    display:flex;
+}
+
+.pic_work_item img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.pic_work_item{
+    position: relative;
+    background: linear-gradient(to bottom,#f38181,#fce38a);
+}
+
+.pic_work_item:hover img{
+    opacity: 0.1;   
+}
+
+.pic_work_item:hover .pic_work_info{
+    opacity: 1;   
+}
+
+.pic_work_info{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding: 0px 15px;
+    top: 50%;
+    left:0;
+    z-index: 1;
+
+    transform: translate3d(0,-50%,0);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.pic_work_title{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pic_work_text{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
 }
