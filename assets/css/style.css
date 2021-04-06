@@ -712,3 +712,24 @@ hr{
     font-weight: 300;
     font-style: italic;
 }
+
+.quote_pic_question{
+    position: absolute;
+    top: -25px;
+    left: -40px;
+    z-index: 1;
+}
+
+
+
+/*WHAT PEOPLE SAY*/
+.section--people{
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    background: url("../images/what_people_say/1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.peoples{
+    display:flex;
+}
