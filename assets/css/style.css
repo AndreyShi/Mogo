@@ -731,5 +731,47 @@ hr{
 }
 
 .peoples{
+    margin-top: 70px;
     display:flex;
+}
+
+.people_item{
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.people_item img{
+    position:absolute;
+    left: 40px;
+    top:0;
+    z-index: 1;
+}
+
+.people_item_name{
+    margin-bottom: 5px;
+    font-size:14px;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.people_item_prof{
+    font-size:15px;
+    color:#333;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.people_item_about{
+    font-size:15px;
+    color:#999;
+}
+
+.people_item_about:before{
+    content:"";
+    display:block;
+    width: 60px;
+    height: 3px;
+    margin: 15px 0;
+    background-color: #f38181;
 }
