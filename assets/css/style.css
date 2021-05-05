@@ -751,6 +751,7 @@ hr{
 .people_item_name{
     margin-bottom: 5px;
     font-size:14px;
+    font-weight: 700;
     color:#333;
     text-transform: uppercase;
 }
@@ -763,6 +764,7 @@ hr{
 }
 
 .people_item_about{
+    font-family: 'Roboto', sans-serif;
     font-size:15px;
     color:#999;
 }
@@ -774,4 +776,40 @@ hr{
     height: 3px;
     margin: 15px 0;
     background-color: #f38181;
+}
+
+
+/*BLOG*/
+
+.blog_table{
+    display:flex;
+    justify-content: space-between;
+}
+
+.blog_item{
+    max-width: 380px;
+}
+
+.blog_item img{
+    display:block;
+}
+
+.title_blog{
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size:14px;
+    font-weight: 700;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.comm_blog{
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color:#999;
+    margin-bottom: 15px;
+}
+
+.border_blog{
+    border-top: 1px solid #e5e5e5;
 }
