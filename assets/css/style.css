@@ -787,6 +787,7 @@ hr{
 }
 
 .blog_item{
+    position: relative;
     max-width: 380px;
 }
 
@@ -812,4 +813,27 @@ hr{
 
 .border_blog{
     border-top: 1px solid #e5e5e5;
+}
+
+.blog_table_data{
+    position:absolute;
+    bottom: 120px;
+    left: -10px;
+    color: white;
+    background-color: #95e1d3;
+    line-height: 1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.blog_table_data .day{
+    font-size:30px;
+    font-weight: 700;
+}
+
+.blog_table_data .mouth{
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
 }
