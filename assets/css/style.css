@@ -43,6 +43,11 @@ hr{
     margin: 0 auto;
 }
 
+.container--footer{
+    display:flex;
+    padding-top: 65px;
+}
+
 .intro{
     display:flex;
     flex-direction:column;
@@ -275,6 +280,7 @@ hr{
     background: #e6e6e6;
     background: url("../images/map/1.png") center no-repeat;
 }
+
 
 /*About*/
 .about{
@@ -891,4 +897,60 @@ hr{
     height: 3px;
     margin: 15px auto 0;
     background-color: #f38181;
+}
+
+
+/*FOOTER*/
+.footer0{
+    min-width: 509px;
+}
+
+.footer1{
+    min-width: 420px;
+}
+
+.footer2{
+    min-width: 270px;
+}
+.footer0_head{
+    font-size:46px;
+    font-weight: 700;
+    color:#cccccc;
+}
+.footer0_txt{
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color:#999;
+    margin-top:35px;
+    margin-bottom:45px;
+    max-width: 463px;
+}
+
+.footer0_cnt_int{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer0_cnt_txt{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer0_line{
+    border-top: 1px solid #e5e5e5;
+    max-width: 480px;
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+.footer0_icon{
+    color:#999;
+    font-size:15px;
+    font-style: italic;
+}
+
+.footer0_icons a{
+    color:#95e1d3;
+    font-size: 18px;
+    margin-left: 15px;
 }
