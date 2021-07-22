@@ -910,7 +910,7 @@ hr{
 }
 
 .footer2{
-    min-width: 270px;
+    min-width: 272px;
 }
 .footer0_head{
     font-size:46px;
@@ -921,8 +921,8 @@ hr{
     font-family: 'Roboto', sans-serif;
     font-size:15px;
     color:#999;
-    margin-top:35px;
-    margin-bottom:45px;
+    margin-top:22px;
+    margin-bottom:40px;
     max-width: 463px;
 }
 
@@ -969,9 +969,59 @@ hr{
 }
 
 .footer1_head{
+    margin: 30px 0px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+/*BLOGS*/
+
+.blogs_item{
+    display:flex;
+    margin-bottom: 31px;
+    align-items: center;
+}
+.blogs_content{
+    padding-left: 20px;
+}
+
+.blogs_title{
+    display: block;
+    color:#333;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.6;
+    padding-right: 46px;
+}
+
+.blogs_title:hover{
+    text-decoration: underline;
+}
+
+.blogs_date{
+    font-size: 13px;
+    color:#999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/*INSTAGRAM*/
+.instagram{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instagram_item{
+    width: 32.333%;
+    border-bottom: 4px solid #fff;
+}
+
+.instagram_item img{
+    display:block;
 }
 
 /*SUBSCRIBE*/
@@ -999,6 +1049,11 @@ hr{
     color:#ccc;
 }
 
+.in_subsr:focus{
+    outline:0;
+    border-color: #95e1d3;
+}
+
 .btn_subsr{
     margin-left: -5px;
     height: 40px;
@@ -1010,4 +1065,13 @@ hr{
     color:white;
     background-color: #95e1d3;
     cursor:pointer;
+    transition: background .2s linear;
+}
+
+.btn_subsr:hover{
+    background-color: #77afa5;
+}
+
+.btn_subsr:focus{
+    outline:0;
 }
