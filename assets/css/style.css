@@ -39,7 +39,8 @@ hr{
 
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -284,14 +285,19 @@ hr{
 
 /*About*/
 .about{
+    margin: 80px -15px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .about_item{
-    width: 380px;
-    background-color: #95e1d3;
+    width: 33.33333%;
+    padding: 0 0px;
+    background-color:#95e1d3;
     position: relative;
+    margin-left: -30px;
+    max-width: 380px;
 }
 .about_item:hover .about_img{
     transform: translate3d(-10px,-10px,0);
@@ -327,6 +333,8 @@ hr{
 
 .about_img img{
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .1s linear;
 }
 
@@ -336,6 +344,7 @@ hr{
 
 .table_stat{
     display: flex;
+    flex-wrap:wrap;
 }
 .item_stat{
     flex:1 1 0;
@@ -1074,4 +1083,107 @@ hr{
 
 .btn_subsr:focus{
     outline:0;
+}
+
+@media (max-width:1230px){
+    /*Intro*/
+    .intro__suptitle{
+        font-size: 52px;
+    }
+    .intro__title{
+        font-size: 120px;
+    }
+}
+
+@media (max-width:990px){
+    /*Intro*/
+    .intro__suptitle{
+        font-size: 32px;
+    }
+    .intro__title{
+        font-size: 80px;
+    }
+    /**/
+    .item_stat{
+        flex:none;
+        width: 33.33333%;
+        border: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .item_stat:last-child{
+        border-right: 0;
+    }
+    .table_stat{
+        justify-content: center;
+    }
+}
+
+@media (max-width:770px){
+    /*Intro*/
+    .nav{
+        display: none;
+    }
+
+    /**/
+    .section{
+        padding: 40px;
+    }
+
+
+    .slider__text{
+        display: none;
+    }
+
+    .slider__item.active:before{
+        width: 50%;
+    }
+    .about{
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .about_item{
+        width: 100%; 
+        margin-bottom: 30px;
+    }
+
+    .about_item:last-child{
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width:575px){
+    /*Intro*/
+    .intro__suptitle{
+        font-size: 22px;
+    }
+    .intro__title{
+        font-size: 40px;
+    }
+
+    .section__header{
+        margin-bottom: 50px;
+    }
+
+    .section__suptitle{
+        font-size: 20px;
+    }
+
+    .section__title{
+        font-size: 24px;
+    }
+
+    .section__title::after{
+        margin:20px auto;
+    }
+
+    .item_stat{
+        width: 100%;
+        border-bottom: 1px solid #b5eae0;
+    }
+    .item_num{
+        font-size: 52px;
+    }
 }
