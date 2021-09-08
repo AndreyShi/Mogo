@@ -371,13 +371,18 @@ hr{
 
 .services{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services_item{
-    flex:1 1 0;
+    width: 33.33333%;
     position:relative;
-    padding-left: 90px;
-    padding-right: 20px;
+    padding: 0 35px 40px 85px;
+    margin-bottom: 40px;
+}
+
+.services_item--border{
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services_item_pic{
@@ -409,6 +414,8 @@ hr{
 
 .devices_item{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices_item--iphone{
@@ -1118,6 +1125,15 @@ hr{
     .table_stat{
         justify-content: center;
     }
+
+    .services_item{
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .services_item--border{
+        border-bottom: 0;
+    }
 }
 
 @media (max-width:770px){
@@ -1130,6 +1146,11 @@ hr{
     .section{
         padding: 40px;
     }
+
+    .section--feature{
+        padding-bottom: 0;
+    }
+        
 
 
     .slider__text{
@@ -1150,6 +1171,20 @@ hr{
 
     .about_item:last-child{
         margin-bottom: 0;
+    }
+
+    .services{
+       justify-content: center; 
+    }
+    .services_item{
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services_item_pic{
+        left:0;
     }
 
 }
@@ -1186,4 +1221,6 @@ hr{
     .item_num{
         font-size: 52px;
     }
+
+    
 }
