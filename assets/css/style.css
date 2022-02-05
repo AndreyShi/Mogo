@@ -426,11 +426,27 @@ hr{
 }
 
 .service_2{
-    display: flex;
+    display: flex;    
+    margin:0 -15px;
+    flex-wrap: wrap;
+}
+.left{
+    width: 49%;
+    padding: 0 15px;
+}
+.main_pic{
+    display:block;
+    max-width: 100%;
+    height: auto;
 }
 
 .right{
     margin-left: 30px;
+
+
+    display:block;
+    max-width: 100%;
+    height: auto;
 }
 
 .acc_head{
@@ -1186,6 +1202,22 @@ hr{
     .services_item_pic{
         left:0;
     }
+
+    .devices_item--iphone{
+        width: 180px;
+        bottom:-50px;
+        right:-80px;
+    }
+
+    .main_pic{
+        display:none;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    
 
 }
 
